@@ -1,0 +1,8 @@
+<div
+  class="wrapper-card"
+  (click)="onSelectFoodCategory(category.id || 0)"
+  id="{{ category.id }}"
+>
+  <img [src]="category.category_img" alt="{{ category.category_title }}" />
+  <p>{{ category.category_title }}</p>
+</div>

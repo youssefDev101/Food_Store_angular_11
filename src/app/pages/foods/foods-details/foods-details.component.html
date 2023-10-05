@@ -1,0 +1,35 @@
+<app-spinner *ngIf="isLoading; else emptyFood"></app-spinner>
+<ng-template #emptyFood>
+  <div class="container">
+    <div class="wrapper">
+      <img
+        [src]="utils.getImageFromFields(food.img || '')"
+        alt="{{ food.title }}"
+      />
+      <div class="content">
+        <h1>{{ food.title }}</h1>
+        <span class="content-badge">{{ food.owner }}</span>
+        <hr />
+        <p>{{ food.description }}</p>
+        <div class="content-price">
+          <h3>
+            <span class="text-danger">{{ food.price?.toFixed(2) }}</span
+            >&nbsp;Dhs
+          </h3>
+          <h4>
+            <span class="text-danger">{{ food.calories }}</span
+            >&nbsp;calories
+          </h4>
+        </div>
+        <br />
+        <div class="wrapper-btn">
+          <app-foods-bag [food]="food" [btnType]="false"></app-foods-bag>
+          <app-arrow-back-button
+            [title]="backButton.title"
+            [link]="backButton.link"
+          ></app-arrow-back-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>

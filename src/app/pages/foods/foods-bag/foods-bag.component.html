@@ -1,0 +1,17 @@
+<span
+  *ngIf="btnType === true"
+  type="button"
+  (click)="onAddToFoodCart()"
+  [ngClass]="isAddToCart ? 'btn-shop-active' : 'btn-shop'"
+>
+  <i class="fas fa-shopping-cart"></i>
+</span>
+
+<button
+  *ngIf="btnType === false"
+  type="button"
+  class="btn-cart"
+  (click)="onAddToFoodCart()"
+>
+  AJOUTER AU PANIER
+</button>

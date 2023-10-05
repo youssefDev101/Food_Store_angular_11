@@ -1,0 +1,4 @@
+<app-spinner *ngIf="isLoading; else detail"></app-spinner>
+<ng-template #detail>
+  {{ delivery | json }}
+</ng-template>

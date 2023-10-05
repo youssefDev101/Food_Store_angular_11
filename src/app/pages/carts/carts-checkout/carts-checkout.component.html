@@ -1,0 +1,22 @@
+<div class="modal" *ngIf="foodsCheckout.show_Modal">
+  <div class="modal-content">
+    <div
+      class="modal-wrapper"
+      *ngFor="let item of foodsCheckout.foods"
+      (click)="onCloseModal()"
+    >
+      <img [src]="utils.getImageFromFields(item.foodImg || '')" alt="{{ item.foodTitle }}" />
+      <p>{{ item.foodTitle }}</p>
+      <p class="text-danger">
+        <i class="fas fa-times"></i>&nbsp;{{ item.foodQte }}
+      </p>
+      <p>{{ item.foodPrice?.toFixed(2) }}&nbsp;Dhs</p>
+    </div>
+    <p>Totals:&nbsp;{{ foodsCheckout.totals?.toFixed(2) }}&nbsp;Dhs</p>
+    <hr />
+    <app-carts-forms [foodsCarts]="foodsCheckout?.foods"></app-carts-forms>
+  </div>
+  <span class="modal-close" (click)="onCloseModal()"
+    ><i class="fas fa-times-circle"></i
+  ></span>
+</div>

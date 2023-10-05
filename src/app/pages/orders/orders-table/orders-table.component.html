@@ -1,0 +1,52 @@
+<div class="table-responsive" *ngIf="orders.length; else data_empty">
+  <table class="table table-hover">
+    <thead>
+      <tr class="text-center">
+        <th scope="col">#</th>
+        <th scope="col">Image</th>
+        <th scope="col">Titre</th>
+        <th scope="col">Quantite</th>
+        <th scope="col">Prix</th>
+        <th scope="col">Date Création</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let order of orders; index as i">
+      <tr class="text-center table-custom">
+        <th class="align-middle">{{ i }}</th>
+        <ng-container *ngFor="let food of order.foods">
+          <td class="align-middle">
+            <img
+            class="order-img"
+              [src]="utils.getImageFromFields(food?.foodImg || '')"
+              alt="{{ food.foodTitle }}"
+            /> 
+          </td>
+          <td class="align-middle">{{ food.foodTitle }}</td>
+          <td class="align-middle">{{ food.foodQte }}</td>
+          <td class="align-middle">{{ food.foodPrice }}&nbsp;Dhs</td>
+        </ng-container>
+        <td class="align-middle">
+          {{ order.dateCreated | date: "dd/MM/yyyy HH:MM" }}
+        </td>
+        <td class="align-middle">
+          <span
+            class="order-status"
+            [ngClass]="onColorStatus(order.status || '')"
+          >
+            {{ order.status }}</span
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #data_empty>
+  <app-error
+    [img]="globals.NOT_FOUND_PAGE.IMAGE"
+    [title]="globals.NOT_FOUND_PAGE.TITLE"
+    [subtitle]="globals.NOT_FOUND_PAGE.BTN_TITLE"
+    [redirect]="globals.FOOD_PAGE.URL"
+  ></app-error>
+</ng-template>

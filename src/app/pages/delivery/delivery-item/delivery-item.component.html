@@ -1,0 +1,28 @@
+<div class="delivery-card">
+  <div class="delivery-card-header">
+    <img
+      [src]="getImage(delivery.backgroundImg || '')"
+      alt="{{ delivery.title }}"
+      class="img-background"
+    />
+    <img
+      [src]="getImage(delivery.logoImg || '')"
+      alt="{{ delivery.title }}"
+      class="img-logo"
+    />
+  </div>
+  <div class="delivery-card-content">
+    <h2>{{ delivery.title }}</h2>
+    <p>{{ delivery.subTitle }}</p>
+    <p class="text-ellipsis">
+      <i class="fas fa-map-marker-alt"></i>&nbsp;{{
+        delivery.address
+      }}
+    </p>
+    <p class="text-blurry"><i class="fas fa-phone-alt"></i>&nbsp;{{ delivery.phone }}</p>
+    <p *ngIf="delivery.city"><i class="fas fa-street-view"></i>&nbsp;{{ delivery.city }}</p>
+  </div>
+  <div class="delivery-card-footer">
+    <button (click)="onNavigateToDeliveryDetails(delivery.id || 0)">{{ globals.DELIVRY_PAGE.NOW_MORE }}</button>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-header">
+    <img [src]="utils.getImageFromFields(food.img || '')" alt="{{ food.title }}" (click)="onNavigateToFoodDetails(food)"/>
+    <app-foods-bag [food]="food" [btnType]=true></app-foods-bag>
+    <div class="card-content" (click)="onNavigateToFoodDetails(food)">
+      <h1>{{ food.title }}</h1>
+      <p>{{ food.calories }}&nbsp;Calories</p>
+      <h2>
+        {{ food.price?.toFixed(2) }}<span class="text-danger">&nbsp;Dhs</span>
+      </h2>
+    </div>
+    <div class="card-footer">
+      <span class="card-badge">{{food.owner}}</span>
+    </div>
+  </div>
+</div>

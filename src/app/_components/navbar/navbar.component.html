@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg nav-background navbar-sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" (click)="onNavigateToPage('home')">
+      <img
+        src="../../../assets/images/favicons/apple-touch-icon.png"
+        class="img-logo"
+        alt="img-icone"
+      />
+    </a>
+    <div class="nav-container">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-icon" (click)="onNavigateToPage('food')"
+            ><i class="fas fa-utensils"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-icon" (click)="onNavigateToPage('carts')"
+            ><i class="fas fa-shopping-basket"></i>
+            <span class="nav-size">{{ foodCartSize }}</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-icon" (click)="onNavigateToPage('delivery')"
+            ><i class="fas fa-shipping-fast"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-icon" (click)="onNavigateToPage('contact')"
+            ><i class="fas fa-bullhorn"></i></a>
+        </li>
+        <li *ngIf="showUserIcon" class="nav-item">
+          <a class="nav-icon hover"
+            ><i class="fas fa-user"></i></a>
+              <div class="tooltip">
+                <button (click)="onNavigateToPage('orders')"><i class="fas fa-dolly-flatbed"></i>&nbsp;orders</button>
+                <button (click)="onLogOut()"><i class="fas fa-sign-out-alt"></i>&nbsp;logout</button>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

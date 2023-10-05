@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <img [src]="img" alt="{{ title }}" />
+  <p>{{ title }}</p>
+  <button *ngIf="subtitle" type="button" (click)="onNavigateToRedirect()">
+    {{ subtitle }}
+  </button>
+</div>

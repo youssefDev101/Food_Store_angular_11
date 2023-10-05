@@ -1,0 +1,19 @@
+<app-spinner *ngIf="isLoading; else data_empty"></app-spinner>
+<ng-template #data_empty>
+  <div class="container">
+    <div class="wrapper-center">
+      <h1>{{ globals.CATOGORY_LIST.TITLE }}</h1>
+      <p>{{ globals.CATOGORY_LIST.SUB_TITLE }}</p>
+    </div>
+
+    <div class="wrapper-content">
+      <div
+        class="wrapper-category"
+        *ngFor="let category of categories; index as i"
+      >
+        <app-category-item [category]="category"></app-category-item>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<app-category-modal *ngIf="isCategoryModalShowed"></app-category-modal>

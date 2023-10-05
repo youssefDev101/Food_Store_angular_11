@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="wrapper">
+    <h1>{{ globals.ORDER_LIST.TITLE }}</h1>
+    <p>{{ globals.ORDER_LIST.SUB_TITLE }}</p>
+  </div>
+  <app-spinner *ngIf="isLoading === true"></app-spinner>
+  <app-orders-table *ngIf="isLoading === false" [orders]="orders"></app-orders-table>
+</div>

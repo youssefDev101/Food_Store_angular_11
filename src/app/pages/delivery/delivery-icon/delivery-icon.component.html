@@ -1,0 +1,12 @@
+<div
+  class="delivery-card"
+  id="{{ deliveryCategory.id }}"
+  #deliveryCategoryDiv
+  (click)="onDeliveryCategoryId(deliveryCategory.id || 0)"
+  >
+  <img
+    [src]="deliveryCategory.deliveryImg"
+    alt="{{ deliveryCategory.deliveryTitle }}"
+  />
+  <p>{{ deliveryCategory.deliveryTitle }}</p>
+</div>

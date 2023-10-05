@@ -1,0 +1,11 @@
+.table-custom {
+  & img {
+    width: 90px;
+  }
+  & select {
+    border: 2px solid var(--red);
+    border-radius: 2rem;
+    text-align: center;
+    width: 40%;
+  }
+}

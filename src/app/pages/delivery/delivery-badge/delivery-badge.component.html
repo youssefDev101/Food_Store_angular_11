@@ -1,0 +1,5 @@
+<div class="container">
+  <div class="wrapper">
+    <span class="badge badge-pill badge-custom" *ngFor="let item of cities" (click)="onSendByCity(item.city)">{{item.city}}</span>
+  </div>
+</div>

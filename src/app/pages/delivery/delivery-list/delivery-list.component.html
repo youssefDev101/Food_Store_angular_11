@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="wrapper">
+    <h1>{{ globals.DELIVRY_PAGE.TITLE }}</h1>
+    <p>{{ globals.DELIVRY_PAGE.SUB_TITLE }}</p>
+  </div>
+  <app-spinner *ngIf="isLoading; else data_empty"></app-spinner>
+  <ng-template #data_empty>
+    <div class="wrapper-container">
+      <ng-container *ngFor="let deliveryCategory of deliveryCategories">
+        <app-delivery-icon
+          [deliveryCategory]="deliveryCategory"
+          (categoryId)="onDeliveryCategoryId($event)"
+        ></app-delivery-icon>
+      </ng-container>
+    </div>
+
+    <app-delivery-badge
+      *ngIf="deliverys.length && deliveryCategory === 2"
+      (city)="onFilterByCity($event)"
+    ></app-delivery-badge>
+
+    <div class="wrapper-container-wrap">
+      <ng-container *ngFor="let delivery of deliverys">
+        <app-delivery-item [delivery]="delivery"></app-delivery-item>
+      </ng-container>
+    </div>
+  </ng-template>
+</div>

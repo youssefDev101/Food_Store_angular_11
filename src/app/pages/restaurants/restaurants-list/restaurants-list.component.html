@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="wrapper-scroller">
+    <div class="wrapper" *ngFor="let item of restaurants; index as i">
+      <img
+        [src]="item.img"
+        alt="{{ item.title }}"
+        (click)="onNavigateToFoodDetails(item.id, item.title)"
+      />
+      <div class="wrapper-content">
+        <h2 (click)="onNavigateToFoodDetails(item.id, item.title)">{{ item.title }}</h2>
+        <h3>{{ item.underCategory }}</h3>
+        <h5>{{ item.address.street }}</h5>
+        <p>{{ item.address.city }}</p>
+      </div>
+    </div>
+  </div>
+</div>

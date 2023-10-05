@@ -1,0 +1,48 @@
+<app-spinner *ngIf="isLoading; else data_empty"></app-spinner>
+<ng-template #data_empty>
+<div class="container">
+  <div class="wrapper-header">
+    <section>
+      <app-breadcrumb (restaurantId)="getRestaurantId($event)"></app-breadcrumb>
+    </section>
+    <img [src]="restaurants?.img" alt="{{ restaurants?.title }}" />
+  </div>
+  <div class="wrapper">
+    <h1>{{ restaurants?.title }}</h1>
+    <h6 class="mt-3">{{ restaurants?.underCategory }}</h6>
+    <h5 class="mt-3">
+      <i class="fas fa-truck"></i>&nbsp;{{ restaurants?.delivery }}
+    </h5>
+    <figure class="text-center mt-3">
+      <i class="fas fa-quote-left quote-wrapper-left"></i>
+      <blockquote class="blockquote">
+        <p>{{ restaurants?.description }}</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        {{ restaurants?.title }}
+      </figcaption>
+      <i class="fas fa-quote-right quote-wrapper-right"></i>
+    </figure>
+    <h5 class="mt-3">
+      <i class="fas fa-map-marker-alt"></i>&nbsp;
+      {{ restaurants?.address?.street }}
+      <span class="text-danger">{{ restaurants?.address?.city }}</span>
+    </h5>
+    <hr />
+    <button (click)="onPhoneCall(restaurants.phone)">
+      <i class="fas fa-phone"></i>&nbsp;{{ restaurants?.phone }}
+    </button>
+
+    <h1 class="mt-4"><i class="fas fa-utensils"></i>&nbsp;Menu</h1>
+  </div>
+
+  <div class="wrapper-menu">
+    <div class="menu-content" *ngFor="let item of restaurants?.menu">
+      <img [src]="item" alt="{{ item }}" (click)="onZoomInPicutre($event)" />
+    </div>
+  </div>
+
+  <app-image-modal-viewer *ngIf="image.modal_show"></app-image-modal-viewer>
+  <app-social-media [socialMedia]="restaurants?.socialMedia"></app-social-media>
+</div>
+</ng-template>

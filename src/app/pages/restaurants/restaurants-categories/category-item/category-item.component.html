@@ -1,0 +1,12 @@
+<div class="category-figure" (click)="onShowCategoryModal()">
+  <div class="category-figure-image">
+    <img
+      alt="{{ category.category_img }}"
+      class="category-location-image"
+      [src]="category.category_img"
+    />
+  </div>
+  <div class="category-figure-content">
+    <span>{{ category.category_title }}</span>
+  </div>
+</div>

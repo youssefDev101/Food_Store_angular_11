@@ -1,0 +1,13 @@
+<app-spinner *ngIf="isLoading; else data_empty"></app-spinner>
+<ng-template #data_empty>
+  <div class="container wrapper">
+    <img class="img-hero" [src]="getHeroImage(heros.hero_img_2 || '')" alt="{{ heros.hero_title }}" />
+    <div class="wrapper-content">
+      <h1>{{ heros.hero_title }}<span>&nbsp;Foody</span></h1>
+      <p class="wrapper-desc">{{ heros.hero_description }}</p>
+      <div class="wrapper-btn">
+        <button type="button" (click)="onNavigateToFoods()">{{ heros.hero_cta }}</button>
+      </div>
+    </div>
+  </div>
+</ng-template>

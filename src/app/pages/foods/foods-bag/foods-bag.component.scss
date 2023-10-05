@@ -1,0 +1,26 @@
+.btn-shop {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  background: transparent;
+  color: var(--dark);
+}
+.btn-shop-active {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  background: transparent;
+  color: var(--red);
+}
+.btn-cart {
+  padding: 0.8rem 4rem;
+  border: none;
+  border-radius: 4rem;
+  color: var(--light);
+  background: var(--red);
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0rem 0rem 1rem #ffb9b8;
+}

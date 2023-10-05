@@ -1,0 +1,46 @@
+.wrapper-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem 0rem 2rem 0rem;
+  & p {
+    font-size: 18px;
+    font-family: "Poppins";
+    word-spacing: 5px;
+    font-weight: 600;
+  }
+}
+.wrapper-content:hover {
+  transform: scale(1);
+}
+.wrapper-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* mobile responsive */
+@media screen and (max-width: 906px) {
+  .wrapper-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 0rem 2rem 0rem;
+    & p {
+      font-size: 18px;
+      font-family: var(--font-family);
+      text-align: center;
+      word-spacing: 5px;
+      font-weight: 700;
+    }
+  }
+  .wrapper-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

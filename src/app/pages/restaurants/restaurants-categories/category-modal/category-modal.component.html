@@ -1,0 +1,20 @@
+<div class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="onHideTheModal()">&times;</span>
+    <div class="modal-container">
+      <h1>
+        {{ globals.CATOGORY_MODAL.TITLE
+        }}<span>{{ category.modal_title }}</span>
+      </h1>
+      <p>{{ globals.CATOGORY_MODAL.DESCRIPTION }}</p>
+    </div>
+    <app-restaurants-list
+      [categorie]="category"
+      (categorySize)="onCategorySize($event)"
+      *ngIf="isShowed; else data_empty"
+    ></app-restaurants-list>
+    <ng-template #data_empty>
+      <p class="error-text">😋 Ooops !! pas plats pour le moment</p>
+    </ng-template>
+  </div>
+</div>

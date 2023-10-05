@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/litera/bootstrap.min.css");
+// @import url("https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css");
+
+
+/* VARIABLES
+--------------------------------*/
+:root {
+  --white: #fff;
+  --red: #d9534f;
+  --light-red: #fbcccb;
+  --grey: #999999;
+  --main-gradient: linear-gradient(180deg, #fbc7c6, rgba(204, 235, 231, 0));
+  --font-family: "Poppins";
+}
+
+/* GLOBALS SETTING
+--------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  // background: var(--light-red);
+}
+
+/* Mixins
+------------------------- */
+@mixin custom-btn {
+    padding: 0.8rem 4rem;
+    border: none;
+    border-radius: 4rem;
+    color: var(--light);
+    background: var(--red);
+    font-size: 18px;
+    font-weight: 700;
+}
+/* SCROLL STYLING
+-------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 4rem;
+}

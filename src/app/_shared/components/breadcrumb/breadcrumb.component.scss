@@ -1,0 +1,15 @@
+.breadcrumb-custom {
+  cursor: pointer;
+  background: transparent;
+  margin: 2rem 2rem;
+  font-size: 14px;
+  font-family: var(--font-family);
+  color: var(--white);
+  & span {
+    color: var(--white);
+  }
+  @media screen and (max-width: 906px) {
+    margin: 1rem 0rem;
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,101 @@
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  .img-hero {
+    flex: 1;
+    width: 50%;
+  }
+}
+.wrapper-content {
+  flex: 1;
+  & h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: var(--font-family);
+    text-align: center;
+    & span {
+      color: var(--red);
+      text-decoration: underline;
+    }
+  }
+  .wrapper-desc {
+    font-size: 1rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+    margin: 1rem 0rem 2rem 0rem;
+    line-height: 24px;
+    word-spacing: 5px;
+    text-align: center;
+  }
+  .wrapper-btn {
+    text-align: center;
+    & button {
+      padding: 0.8rem 4rem;
+      border: none;
+      border-radius: 4rem;
+      color: var(--light);
+      background: var(--red);
+      font-size: 18px;
+      font-weight: 700;
+      box-shadow: 0rem 0rem 1rem #ffb9b8;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+  /* mobile responsive */
+  @media screen and (max-width: 906px) {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      .img-hero {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+    .wrapper-content {
+      & h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        font-family: var(--font-family);
+        text-align: center;
+        & span {
+          color: var(--red);
+          text-decoration: underline;
+        }
+      }
+      .wrapper-desc {
+        font-size: 18px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        margin: 2rem 0rem 2rem 0rem;
+        line-height: 24px;
+        word-spacing: 5px;
+        text-align: center;
+      }
+      .wrapper-btn {
+        text-align: center;
+        & button {
+          padding: 0.8rem 4rem;
+          border: none;
+          border-radius: 4rem;
+          color: var(--light);
+          background: var(--red);
+          font-size: 18px;
+          font-weight: 700;
+          box-shadow: 0rem 0rem 1rem #ffb9b8;
+    
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,111 @@
+.nav-background {
+  border: none;
+  height: 5rem;
+  background-color: transparent !important;
+  // box-shadow: 0rem 0rem 2rem rgb(255 185 184);
+  margin: 0rem 0rem 0rem 0rem;
+}
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3006875rem;
+  padding-bottom: 0.3006875rem;
+  margin-right: 0rem;
+  font-size: 1.32875rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.img-logo {
+  width: 65px;
+  height: 65px;
+}
+.nav-icon {
+  cursor: pointer;
+  position: relative;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  color: var(--red);
+  font-size: 35px;
+  font-weight: bold;
+}
+.nav-size {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 18px;
+  height: 18px;
+  line-height: 17px;
+  color: var(--white);
+  background: var(--red);
+  border: 1px solid var(--red);
+  text-align: center;
+  border-radius: 50%;
+  font-size: 0.625rem;
+}
+.nav-item:hover {
+  transform: scale(1.3);
+}
+///////////////////////////////////////
+.hover {
+  position: relative;
+  top: -10px;
+  left: -10px;
+  // border: 1px solid;
+  // padding: 1rem;
+  width: 5rem;
+  @media screen and (max-width: 906px) {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    width: 0rem;
+  }
+}
+
+.tooltip {
+  border: none;
+  position: absolute;
+  opacity: 0;
+  left: 10%;
+  top: 10%;
+  transition: opacity 0.5s;
+  & button {
+    border: none;
+    background: transparent;
+    color: var(--red);
+    border-radius: 2rem;
+    font-size: 1Zpx;
+    font-weight: 500;
+    border: 2px solid var(--red);
+    padding: 2px 8px;
+    margin-top: 5px;
+  }
+}
+
+.hover:hover .tooltip {
+  opacity: 1;
+}
+/* mobile responsive */
+@media screen and (max-width: 906px) {
+  .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .navbar-sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}

@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="wrapper">
+    <h1>{{ globals.FOOD_PAGE.TITLE }}</h1>
+    <p>{{ globals.FOOD_PAGE.SUB_TITLE }}</p>
+    <!-- <p *ngIf="apiService.foods != undefined">{{ apiService.foods[0].foodReady}}</p> -->
+  </div>
+  <app-spinner *ngIf="isLoadingCategory; else categoryTemplate"></app-spinner>
+  <app-error
+    *ngIf="isLoadingFood; else foodTemplate"
+    [img]="globals.FOOD_PAGE.IMG_EMPTY"
+    [title]="globals.FOOD_PAGE.TITLE_EMPTY"
+  ></app-error>
+
+  <ng-template #categoryTemplate>
+    <div class="wrapper-content">
+      <app-foods-icon
+        [category]="foodCategory"
+        (categoryId)="onLoadFoodById($event)"
+        *ngFor="let foodCategory of foodCategories; index as index"
+      ></app-foods-icon>
+    </div>
+  </ng-template>
+
+  <ng-template #foodTemplate>
+    <div class="wrapper-content mt-4">
+      <app-foods-card
+        [food]="food"
+        *ngFor="let food of foods; index as index"
+      ></app-foods-card>
+    </div>
+  </ng-template>
+</div>

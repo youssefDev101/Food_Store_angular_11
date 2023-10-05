@@ -1,0 +1,49 @@
+<div class="table-responsive" *ngIf="foods.length; else data_empty">
+  <table class="table table-hover">
+    <thead>
+      <tr class="text-center">
+        <th scope="col">#</th>
+        <th scope="col">Image</th>
+        <th scope="col">Titre</th>
+        <th scope="col">Quantite</th>
+        <th scope="col">Prix</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let food of foods; index as i">
+      <tr class="text-center table-custom">
+        <th class="align-middle">{{ i }}</th>
+        <td class="align-middle">
+          <img [src]="utils.getImageFromFields(food.img || '')" alt="{{ food.title }}" />
+        </td>
+        <td class="align-middle">{{ food.title }}</td>
+        <td class="align-middle">
+          <select
+            name="foodQte"
+            #foodQte
+            [value]="food.quantity"
+            (change)="onChangeQtePrice(food.id || 0, $event)"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </td>
+        <td class="align-middle">{{ food.price }}&nbsp;Dhs</td>
+        <td class="align-middle">
+          <app-carts-trash [foodId]="food.id || 0"> </app-carts-trash>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <app-carts-totals [foods]=foods> </app-carts-totals>
+</div>
+
+<ng-template #data_empty>
+  <app-error
+    [img]="globals.NOT_FOUND_PAGE.IMAGE"
+    [title]="globals.NOT_FOUND_PAGE.TITLE"
+    [subtitle]="globals.NOT_FOUND_PAGE.BTN_TITLE"
+    [redirect]="globals.FOOD_PAGE.URL"
+  ></app-error>
+</ng-template>

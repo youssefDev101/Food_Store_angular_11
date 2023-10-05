@@ -1,0 +1,601 @@
+{
+  "hero_page": [
+    {
+      "hero_title": "Bienvenue à ",
+      "hero_description": "Avec Foody il est très simple pour vos clients de vous trouver, de vous contacter et de commander leurs plats préférés",
+      "hero_img": "../../../assets/images/layouts/hero1.svg",
+      "hero_cta": "Découvrir les plats"
+    }
+  ],
+  "category_restaurants": [
+    {
+      "category_title": "spécialités italiennes",
+      "category_img": "https://i.pinimg.com/474x/de/3e/70/de3e7041eb000cff58b4cc606336cafd--spaghetti-alla-norma-g.jpg",
+      "id": 1
+    },
+    {
+      "category_title": "spécialités américaines",
+      "category_img": "https://i.pinimg.com/474x/f3/02/1e/f3021e08a33e9f28761d01d1f1b01c24--chocolate-pies-pears.jpg",
+      "id": 2
+    },
+    {
+      "category_title": "spécialités asiatiques",
+      "category_img": "https://i.pinimg.com/474x/b2/5e/fc/b25efc6bdaea8c87cfce49799e88b1ee.jpg",
+      "id": 3
+    },
+    {
+      "category_title": "spécialités asiatiques (japonaise)",
+      "category_img": "https://i.pinimg.com/474x/b2/5e/fc/b25efc6bdaea8c87cfce49799e88b1ee.jpg",
+      "id": 3
+    },
+    {
+      "category_title": "spécialités marocaines",
+      "category_img": "https://i.pinimg.com/474x/b4/fb/92/b4fb92feaa8bd6c11f395d438c4b3536.jpg",
+      "id": 4
+    },
+    {
+      "category_title": "spécialités asiatiques (chinoise)",
+      "category_img": "https://i.pinimg.com/474x/03/37/9b/03379b6765c48d31543cfb3fe9220472.jpg",
+      "id": 5
+    },
+    {
+      "category_title": "spécialités mexicaines",
+      "category_img": "https://i.pinimg.com/474x/5d/7c/90/5d7c9084e8347e5c358a7599eb502515.jpg",
+      "id": 6
+    },
+    {
+      "category_title": "spécialités françaises",
+      "category_img": "https://i.pinimg.com/474x/36/19/54/361954936752a9769c7871cbd563db4e.jpg",
+      "id": 7
+    },
+    {
+      "category_title": "spécialités libanaises",
+      "category_img": "https://i.pinimg.com/474x/6a/ac/a9/6aaca955a63344f51e9a0c41b0830d0e.jpg",
+      "id": 8
+    }
+  ],
+  "category_foods": [
+    {
+      "category_title": "burger & frits",
+      "category_img": "https://cdn-icons-png.flaticon.com/128/1161/1161695.png",
+      "id": 1
+    },
+    {
+      "category_title": "poulette",
+      "category_img": "https://cdn-icons-png.flaticon.com/128/3014/3014481.png",
+      "id": 2
+    },
+    {
+      "category_title": "poisson",
+      "category_img": "https://cdn-icons-png.flaticon.com/128/3280/3280002.png",
+      "id": 3
+    },
+    {
+      "category_title": "glace",
+      "category_img": "https://cdn-icons-png.flaticon.com/128/2234/2234843.png",
+      "id": 4
+    },
+    {
+      "category_title": "boisson",
+      "category_img": "https://cdn-icons-png.flaticon.com/128/3500/3500349.png",
+      "id": 5
+    },
+    {
+      "category_title": "pizza",
+      "category_img": "https://cdn-icons-png.flaticon.com/128/1404/1404996.png",
+      "id": 6
+    },
+    {
+      "category_title": "salade",
+      "category_img": "https://cdn-icons-png.flaticon.com/128/1057/1057409.png",
+      "id": 7
+    },
+    {
+      "category_title": "jus",
+      "category_img": "https://cdn-icons-png.flaticon.com/128/2907/2907410.png",
+      "id": 8
+    },
+    {
+      "category_title": "autre",
+      "category_img": "https://cdn-icons-png.flaticon.com/128/701/701965.png",
+      "id": 9
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "title": "Wayback Burgers",
+      "img": "https://www.eat.ma/wp-content/uploads/WAYBACK-300x249.jpeg",
+      "category": 2,
+      "underCategory": [
+        "Burger",
+        "Hotdog",
+        "Américain",
+        "Milkshakes",
+        "Fast-food"
+      ],
+      "delivery": [
+        "Livraison",
+        "Sur place",
+        "A emporter"
+      ],
+      "address": {
+        "street": "10 Rue Ibnou Yaala El Ifrani",
+        "city": "Casablanca",
+        "zipcode": "92998",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "0684-334141",
+      "description": "we resaurantFancy a quick and relaxed burger! You are at the right address.We serve fresh burgers, hand dipped milkshakes, and more…",
+      "menu": [
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat_2.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat_1.jpg"
+        }
+      ],
+      "socialMedia": {
+        "website": "https://waybackburgers.com/fr/",
+        "facebook": "https://fr-fr.facebook.com/waybackmaroc/",
+        "intagram": "https://www.instagram.com/waybackburgerscasablanca/?hl=fr",
+        "telegram": "https://wa.me/0684334141",
+        "whatup": "https://wa.me/0684334141"
+      }
+    },
+    {
+      "id": 2,
+      "title": "La Frite",
+      "img": "https://www.eat.ma/wp-content/uploads/La-Frite-Casablanca-Logo-300x300.jpg",
+      "category": 2,
+      "underCategory": [
+        "Burger",
+        "Américain",
+        "Sandwichs",
+        "Fast-food"
+      ],
+      "delivery": [
+        "Livraison",
+        "Sur place",
+        "A emporter"
+      ],
+      "address": {
+        "street": "10 Rue de la Réunion, 20000",
+        "city": "Casablanca",
+        "zipcode": "92998",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "0684334141",
+      "description": "Venez déguster à Casablanca et dans un cadre chaleureux et convivial, le meilleur cornet de frites fraîches et authentiques.. Mais aussi burgers et shakes.",
+      "menu": [
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/La-Frite-Casablanca-Menu-Restaurant-1.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/La-Frite-Casablanca-Menu-Restaurant-2.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/La-Frite-Casablanca-Menu-Restaurant-3.jpg"
+        }
+      ],
+      "socialMedia": {
+        "website": "https://www.eat.ma/casablanca/la-frite",
+        "facebook": "https://fr-fr.facebook.com/lafritecasablanca/",
+        "intagram": "https://www.instagram.com/lafritecasa/?hl=fr",
+        "telegram": "https://wa.me/0699090909",
+        "whatup": "https://wa.me/0699090909"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Thami burger",
+      "img": "https://www.eat.ma/wp-content/uploads/thami-150x150.jpg",
+      "category": 2,
+      "underCategory": [
+        "Burger",
+        "Américain",
+        "Fast-food"
+      ],
+      "delivery": [
+        "Livraison",
+        "Sur place",
+        "A emporter"
+      ],
+      "address": {
+        "street": "22 Rue Hafid Salafi",
+        "city": "Casablanca",
+        "zipcode": "92998",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "0522251999",
+      "description": "",
+      "menu": [
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/THAMI-1.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/THAMI-2.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/THAMI-3.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/THAMI-4.jpg"
+        }
+      ],
+      "socialMedia": {
+        "website": "https://www.eat.ma/casablanca/thami-burger",
+        "facebook": "https://fr.cybo.com/MA-biz/thami-burger",
+        "intagram": "https://www.instagram.com/thamiburger/?hl=fr",
+        "telegram": "https://wa.me/0522251999",
+        "whatup": "https://wa.me/0522251999"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Foodoir",
+      "img": "https://www.eat.ma/wp-content/uploads/foodoir-casablanca-restaurant.png",
+      "category": 2,
+      "underCategory": [
+        "Burger",
+        "Américain",
+        "Tacos",
+        "Fast-food"
+      ],
+      "delivery": [
+        "Livraison",
+        "Sur place",
+        "A emporter"
+      ],
+      "address": {
+        "street": "88, boulevard zerktouni",
+        "city": "Casablanca",
+        "zipcode": "92998",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "0684-334141",
+      "description": "we_resaurantFancy a quick and relaxed burger! You are at the right address.We serve fresh burgers, hand dipped milkshakes, and more…",
+      "menu": [
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat-150x150.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat_1-150x150.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat_2-150x150.jpg"
+        }
+      ],
+      "socialMedia": {
+        "website": "resaurantFancy.org",
+        "facebook": "facebook-resaurantFancy.org",
+        "intagram": "inta-resaurantFancy.org",
+        "telegram": "https://wa.me/",
+        "whatup": "https://wa.me/"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Blend",
+      "img": "https://www.eat.ma/wp-content/uploads/fedea746cd0ecb257a1249d3a2a80bb1-300x300.jpg",
+      "category": 2,
+      "underCategory": [
+        "Burger",
+        "Américain",
+        "Viande",
+        "Salades",
+        "Fast-food"
+      ],
+      "delivery": [
+        "Livraison",
+        "Sur place",
+        "A emporter"
+      ],
+      "address": {
+        "street": "9 Rue Théophile Gauthier",
+        "city": "Casablanca",
+        "zipcode": "92998",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "0684-334141",
+      "description": "we_resaurantFancy a quick and relaxed burger! You are at the right address.We serve fresh burgers, hand dipped milkshakes, and more…",
+      "menu": [
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat-150x150.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat_1-150x150.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat_2-150x150.jpg"
+        }
+      ],
+      "socialMedia": {
+        "website": "resaurantFancy.org",
+        "facebook": "facebook-resaurantFancy.org",
+        "intagram": "inta-resaurantFancy.org",
+        "telegram": "https://wa.me/",
+        "whatup": "https://wa.me/"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Boccaccio",
+      "img": "https://www.eat.ma/wp-content/uploads/107376599_1143099079399343_5716886835219213057_o-300x300.jpg",
+      "category": 1,
+      "underCategory": [
+        "Italien"
+      ],
+      "delivery": [
+        "Livraison",
+        "Sur place",
+        "A emporter"
+      ],
+      "address": {
+        "street": "6-8 rue Ahmed El Mokri (ex rue d’Auteuil) 20000",
+        "city": "Casablanca",
+        "zipcode": "92998",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "0684-334141",
+      "description": "we resaurantFancy a quick and relaxed burger! You are at the right address.We serve fresh burgers, hand dipped milkshakes, and more…",
+      "menu": [
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat-150x150.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat_1-150x150.jpg"
+        },
+        {
+          "figure": "https://www.eat.ma/wp-content/uploads/Wayback_burgers_menu_restaurant_eat_2-150x150.jpg"
+        }
+      ],
+      "socialMedia": {
+        "website": "resaurantFancy.org",
+        "facebook": "facebook-resaurantFancy.org",
+        "intagram": "inta-resaurantFancy.org",
+        "telegram": "https://wa.me/",
+        "whatup": "https://wa.me/"
+      }
+    }
+  ],
+  "foods": [
+    {
+      "category_id": 4,
+      "title": "Vanilla Icecream",
+      "calories": 35,
+      "price": 20,
+      "quantity": 1,
+      "owner": "Oliveri",
+      "description": "Vanilla Icecream",
+      "img": "../../../../assets/images/pages/foods/food1.png",
+      "id": 1
+    },
+    {
+      "category_id": 4,
+      "title": "Falooda Icecream",
+      "calories": 65,
+      "price": 10.5,
+      "quantity": 1,
+      "owner": "Oliveri",
+      "description": "Vanilla Icecream",
+      "img": "../../../../assets/images/pages/foods/food2.png",
+      "id": 2
+    },
+    {
+      "category_id": 4,
+      "title": "Ice Cups",
+      "calories": 85,
+      "price": 14,
+      "quantity": 1,
+      "owner": "Oliveri",
+      "description": "Vanilla Icecream",
+      "img": "../../../../assets/images/pages/foods/food3.png",
+      "id": 3
+    },
+    {
+      "category_id": 2,
+      "title": "Broasted Chicken",
+      "calories": 105,
+      "price": 28,
+      "quantity": 1,
+      "owner": "Oliveri",
+      "description": "Chicken Chicken",
+      "img": "https://firebasestorage.googleapis.com/v0/b/restaurantapp-c2ed6.appspot.com/o/Images%2F1648228449305-c7.png?alt=media",
+      "id": 4
+    },
+    {
+      "category_id": 7,
+      "title": "Salade Moumni",
+      "calories": 25,
+      "price": 37,
+      "quantity": 1,
+      "owner": "Moumni",
+      "description": "Laitue, concombre, pomme de terre, haricots verts, maïs, thon, œuf, carottes",
+      "img": "../../../../assets/images/pages/foods/food4.png",
+      "id": 5
+    },
+    {
+      "category_id": 1,
+      "title": "Cheese Burger",
+      "calories": 125,
+      "price": 35,
+      "quantity": 1,
+      "owner": "Moumni",
+      "description": "Garniture: tomate, laitue, sauce burger. Accompagné de frites",
+      "img": "../../../../assets/images/pages/foods/food5.png",
+      "id": 6
+    },
+    {
+      "category_id": 1,
+      "title": "Double Cheese Burger",
+      "calories": 185,
+      "price": 46,
+      "quantity": 1,
+      "owner": "Moumni",
+      "description": "Garniture: tomate, laitue, sauce burger. Accompagné de frites",
+      "img": "../../../../assets/images/pages/foods/food6.png",
+      "id": 7
+    },
+    {
+      "category_id": 6,
+      "title": "Pizza Margherita",
+      "calories": 155,
+      "price": 38,
+      "quantity": 1,
+      "owner": "Moumni",
+      "description": "Sauce tomate, mozzarella, olives noires, origan (Pizza Double)",
+      "img": "../../../../assets/images/pages/foods/food7.png",
+      "id": 8
+    },
+    {
+      "category_id": 6,
+      "title": "Pizza Végétarienne",
+      "calories": 115,
+      "price": 42,
+      "quantity": 1,
+      "owner": "Moumni",
+      "description": "Sauce tomate, mozzarella, légumes de saison, origan (Pizza Double)",
+      "img": "../../../../assets/images/pages/foods/food8.png",
+      "id": 9
+    },
+    {
+      "category_id": 6,
+      "title": "Pizza Thon",
+      "calories": 135,
+      "price": 52,
+      "quantity": 1,
+      "owner": "Moumni",
+      "description": "Sauce tomate, mozzarella, thon, olives noires, poivrons, origan (Pizza Double)",
+      "img": "../../../../assets/images/pages/foods/food9.png",
+      "id": 10
+    },
+    {
+      "category_id": 6,
+      "title": "Pizza Charcuterie",
+      "calories": 125,
+      "price": 52,
+      "quantity": 1,
+      "owner": "Moumni",
+      "description": "Sauce tomate, mozzarella, charcuterie, parmesan, origan (Pizza Double)",
+      "img": "../../../../assets/images/pages/foods/food10.png",
+      "id": 11
+    }
+  ],
+  "users": [
+    {
+      "firstName": "anas",
+      "lastName": "naji",
+      "phone": "0677766554",
+      "email": "test@gmail.com",
+      "adresse": "test",
+      "city": "casablnaca",
+      "geoLocation": {
+        "lat": 33.5769281,
+        "lng": -7.5541651
+      },
+      "id": 1
+    },
+    {
+      "firstName": "amine",
+      "lastName": "wali",
+      "phone": "0677665544",
+      "email": "test@gmail.com",
+      "adresse": "tessst",
+      "city": "casa",
+      "geoLocation": {
+        "lat": 33.5552948,
+        "lng": -7.6013974
+      },
+      "id": 2
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "phone": "0677886655",
+      "email": "test@gmail.com",
+      "adresse": "test",
+      "city": "casa",
+      "geoLocation": {
+        "lat": 33.5769281,
+        "lng": -7.5541651
+      },
+      "id": 3
+    }
+  ],
+  "carts": [
+    {
+      "foods": [
+        {
+          "foodId": 9,
+          "foodTitle": "Pizza Végétarienne",
+          "foodQte": 1,
+          "foodPrice": 42,
+          "foodImg": "../../../../assets/images/pages/foods/food8.png"
+        },
+        {
+          "foodId": 1,
+          "foodTitle": "Vanilla Icecream",
+          "foodQte": 1,
+          "foodPrice": 20,
+          "foodImg": "../../../../assets/images/pages/foods/food1.png"
+        }
+      ],
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "foods": [
+        {
+          "foodId": 5,
+          "foodTitle": "Salade Moumni",
+          "foodQte": 1,
+          "foodPrice": 37,
+          "foodImg": "../../../../assets/images/pages/foods/food4.png"
+        }
+      ],
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "foods": [
+        {
+          "foodId": 9,
+          "foodTitle": "Pizza Végétarienne",
+          "foodQte": 1,
+          "foodPrice": 42,
+          "foodImg": "../../../../assets/images/pages/foods/food8.png"
+        }
+      ],
+      "userId": 3,
+      "id": 3
+    }
+  ],
+  "counts":[
+   {
+    "foodReady": 12,
+    "foodNotReady": 10
+   }
+  ]
+}

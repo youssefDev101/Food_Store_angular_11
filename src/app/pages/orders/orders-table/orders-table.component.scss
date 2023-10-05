@@ -1,0 +1,26 @@
+.order-img {
+  width: 4rem;
+}
+.order-status {
+  border: none;
+  padding: 0.1rem 1.5rem;
+  border-radius: 2rem;
+}
+.status-progress {
+  background-color: var(--yellow);
+  color: var(--light);
+  font-size: 15px;
+  font-weight: 500;
+}
+.status-valid {
+  background-color: var(--green);
+  color: var(--light);
+  font-size: 15px;
+  font-weight: 500;
+}
+.status-invalid {
+  background-color: var(--danger);
+  color: var(--light);
+  font-size: 15px;
+  font-weight: 500;
+}

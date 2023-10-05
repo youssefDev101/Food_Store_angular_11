@@ -1,0 +1,116 @@
+<div class="container">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="row mt-2">
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Nom"
+          formControlName="firstName"
+          [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"
+        />
+        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+          <div *ngIf="f.firstName.errors?.required">
+            {{ globals.REQUIRED_ERROR_MSG }}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Prénom"
+          formControlName="lastName"
+          [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }"
+        />
+        <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+          <div *ngIf="f.lastName.errors?.required">
+            {{ globals.REQUIRED_ERROR_MSG }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Adresse de livraison"
+          formControlName="adresse"
+          [ngClass]="{ 'is-invalid': submitted && f.adresse.errors }"
+        />
+        <div *ngIf="submitted && f.adresse.errors" class="invalid-feedback">
+          <div *ngIf="f.adresse.errors?.required">
+            {{ globals.REQUIRED_ERROR_MSG }}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Email"
+          formControlName="email"
+          [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+        />
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+          <div *ngIf="f.email.errors?.required">
+            {{ globals.REQUIRED_ERROR_MSG }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Ville"
+          formControlName="city"
+          [ngClass]="{ 'is-invalid': submitted && f.city.errors }"
+        />
+        <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+          <div *ngIf="f.city.errors?.required">
+            {{ globals.REQUIRED_ERROR_MSG }}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Numéro de téléphone"
+          formControlName="phone"
+          [ngClass]="{ 'is-invalid': submitted && f.phone.errors }"
+        />
+        <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+          <div *ngIf="f.phone.errors?.required">
+            {{ globals.REQUIRED_ERROR_MSG }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group form-check mt-4 text-center">
+      <input
+        type="checkbox"
+        formControlName="acceptTermsGeo"
+        (click)="onCheckGeoLocalisation()"
+        id="acceptTermsGeo"
+        class="form-check-input"
+        [ngClass]="{ 'is-invalid': submitted && f.acceptTermsGeo.errors }"
+      />
+      <label for="acceptTermsGeo" class="form-check-label"
+        >Accept Les Conditions (localisation)</label
+      >
+      <div
+        *ngIf="submitted && f.acceptTermsGeo.errors"
+        class="invalid-feedback"
+      >
+        {{ globals.REQUIRED_ERROR_MSG }}
+      </div>
+    </div>
+    <div class="text-center">
+      <button type="submit">commander</button>
+    </div>
+  </form>
+</div>
